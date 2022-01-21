@@ -2,7 +2,8 @@
 
 Go version of libducohasher alternatives
 
-> 1.6x faster based on my test with original Python DUCOS1 algorithms
+> 1.6x faster based on my test with original Python DUCOS1 algorithms.
+> Pay attention to Python thread safety when using this.
 
 ## Usage
 
