@@ -15,7 +15,7 @@ class Return(Structure):
 
 
 # DUCOS1
-lib.DUCOS1.argtypes = [GoString, GoString, c_longlong, c_longlong]
+lib.DUCOS1.argtypes = [GoString, GoString, c_longlong, c_double]
 lib.DUCOS1.restype = Return
 
 # DUCOS1Nonce
@@ -49,7 +49,7 @@ def DUCOS1(
         last_h,
         exp_h,
         diff,
-        int(eff * 100000000),
+        eff,
     )
 
     return r.r0, r.r1
